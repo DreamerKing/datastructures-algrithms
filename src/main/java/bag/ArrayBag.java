@@ -28,7 +28,7 @@ public class ArrayBag<T> implements BagInterface<T> {
         return numberOfEntries >= bag.length;
     }
 
-    public void checkInitialization(){
+    private void checkInitialization(){
         if(!initialized){
             throw new SecurityException("ArrayBag object is not initialized property.");
         }
@@ -57,6 +57,7 @@ public class ArrayBag<T> implements BagInterface<T> {
         }
         return where;
     }
+
     /**
      * Gets the current number of entries in this bag.
      *

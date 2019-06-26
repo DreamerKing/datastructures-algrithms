@@ -19,6 +19,7 @@ public class ArrayBagDemo1 {
             if(aBag.add(content[index])){
                 System.out.print(content[index] + " ");
             } else {
+                System.out.println();
                 System.out.print("Unable to add " + content[index] + " to the bag.");
             }
         }
